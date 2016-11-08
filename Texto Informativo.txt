@@ -74,3 +74,7 @@ Que te identificará para todos los commits de todos los proyectos que hagas en 
 Para poder enviar nuestra información a Github, ahora tenemos que usar el comando:
 	git push --set-upstream origin master
 Esto nos pedirá nuestro usuario / contraseña de github, y nuestro proyecto ya está configurado para poder subir y bajar archivos sin ninguna configuración adicional.
+
+Ahora para subir todos los commits que hemos hecho a github, solo tenemos que utilizar el comando
+	git push
+Que nos pedirá nuevamente usuario/contraseña de github, y nuestros cambios estarán allí.
