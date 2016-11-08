@@ -50,4 +50,5 @@ Nos devuelve:
 	On branch master
 	nothing to cmmit, working directory clean
 
-Lo que significa que todos nuestros cambios están ya guardados de forma permanente.
+Lo que significa que todos nuestros nuevos archivos están ya guardados de forma permanente.
+Tras hacer una corrección en este fichero, hemos creado un cambio:
