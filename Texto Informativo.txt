@@ -53,3 +53,20 @@ Nos devuelve:
 Lo que significa que todos nuestros nuevos archivos están ya guardados de forma permanente.
 Tras hacer una corrección en este fichero, hemos creado un cambio:
 Esto se refleja en git status como que el fichero ha sido modificado, como ya es parte de nuestro poyecto no hay que añadirlo, solo hay que commitear los cambios.
+
+Hasta ahora, todo el trabajo está en local.
+Para publicarlo en github, hay que añadir un remoto (un host para nuestro git, para entendernos mejor)
+Primero creamos el proyecto en github(hay que registrarse, es gratis, y con la cuenta de la UCM te dan repositorios privados) y lo llamamos TrabajoUtilidadSocial
+
+Utilizamos el comando:
+	git remote add origin https://github.com/<Usuario>/<NombreDelProyecto>
+Que no devuelve nada.
+Ahora al hacer el comando:
+	git remote -v
+Nos devuelve:
+	origin  https://github.com/Pabsilon/TrabajoUtilidadSocial (fetch)
+	origin  https://github.com/Pabsilon/TrabajoUtilidadSocial (push)
+Por lo que ya tenemos configurado un origen.
+Si queremos que nuestros cambios se reflejen como nuestros (y no de nuestra máquina) nos podemos identificar de la siguiente manera:
+	git config --global user.name "Tu nombre aquí"
+Que te identificará para todos los commits de todos los proyectos que hagas en la máquina en la que estás trabajando.
