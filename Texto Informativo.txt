@@ -1,0 +1,53 @@
+En primer lugar hay que instalar un cliente git.
+Cualquier cliente GIT tiene una consola de GIT:
+
+MINGW32 es un shell de bash que corre sobre windows. Con los mismos comandos podemos crear una carpeta en nuestro sistema de ficheros:
+	mkdir TrabajoUtilidadSocial
+
+Al utilizar el comando:
+	git init
+Estamos inicializando la carpeta como un repositorio. Esto creará una carpeta llamada .git que guarda la información necesaria.
+
+Como hemos creado el repositorio vacío, el comando
+	git status
+Nos devolverá el mensaje:
+	On branch master
+	Initial commit
+	Nothing to commit
+
+Este comando le preguta a git el estado actual del repositorio. Nos dice en qué rama estamos (más sobre esto mas adelante), cual es el último commit (más sobre esto mas adelante), y el mensaje que nos importa: Nothing to commit. Esto significa que no ha habido ningun cambio.
+
+Hemos creado una captura de pantalla en el que mostramos lo anterior, y lo hemos añadido a Images/1.jpg
+
+Ahora, al volver a hacer el comando
+	git status
+Nos devuelve la misma información que antes, salvo que ahora nos dice:
+	Untracked files:
+		Images/
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+Esto significa que git ha detectado que hemos añadido nuevos archivos, pero no hemos modificado ninguno anterior.
+
+Al hacer el comando
+	git add -all
+Le estamos diciendo a git que todos los archivos de la carpeta se deberían considerar como parte del proyecto y que los considere como tal (Los archivos especificados en gitignore se siguen ignorando, mas información mas adelante)
+
+De nuevo, el cmando
+	git status
+Nos devuelve nueva información:
+	Changes to be committed:
+		new file:	Images/1.jpg
+		new file:	Images/2.jpg
+
+Como nos parece un buen momento para crear un marcador de nuestros cambios, creamos un commit.
+	git commit --all -m "Primer commit, dos Imagenes del proyecto"
+Esto guarda como un marcador todos los cambios que hemos incluido en el commit, con un mensaje orientativo para poder tener una idea de qué hemos hecho.
+
+Una vez mas:
+	git status
+Nos devuelve:
+	On branch master
+	nothing to cmmit, working directory clean
+
+Lo que significa que todos nuestros cambios están ya guardados de forma permanente.
