@@ -52,3 +52,4 @@ Nos devuelve:
 
 Lo que significa que todos nuestros nuevos archivos están ya guardados de forma permanente.
 Tras hacer una corrección en este fichero, hemos creado un cambio:
+Esto se refleja en git status como que el fichero ha sido modificado, como ya es parte de nuestro poyecto no hay que añadirlo, solo hay que commitear los cambios.
