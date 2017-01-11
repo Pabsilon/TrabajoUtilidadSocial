@@ -19,9 +19,9 @@
 
 	<div id="contenedor">
 		<div id="centro">
-			<h1>Introducción</h1>
+			<h1>Guía de la web de GitHub</h1>
 			<p><?php
-					require_once 'contenido/introduccion.txt';
+					require_once 'contenido/guiaWeb.txt';
 				?></p>
 		</div>
 	</div>

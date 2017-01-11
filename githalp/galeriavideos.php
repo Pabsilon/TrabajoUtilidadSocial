@@ -19,10 +19,8 @@
 
 	<div id="contenedor">
 		<div id="centro">
-			<h1>Introducción</h1>
-			<p><?php
-					require_once 'contenido/introduccion.txt';
-				?></p>
+			<h1>Galería de vídeos</h1>
+			<p>Meter aquí los vídeos, por ejemplo en forma de parrilla.</p>
 		</div>
 	</div>
 

@@ -19,9 +19,9 @@
 
 	<div id="contenedor">
 		<div id="centro">
-			<h1>Introducción</h1>
+			<h1>Guía de la consola de comandos</h1>
 			<p><?php
-					require_once 'contenido/introduccion.txt';
+					require_once 'contenido/guiaConsola.txt';
 				?></p>
 		</div>
 	</div>
