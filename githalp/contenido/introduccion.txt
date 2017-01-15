@@ -1,3 +1,6 @@
-Este es un ejemplo de contenido:
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Hemos creado una página web a modo de tutorial para fomentar el uso de la gran herramienta Github, y lo hemos hecho a través de una página web ya que creemos que es la mejor forma para hacer llegar la información al mayor número de personas.
+
+Además, hemos hecho vídeos explicativos de la herramienta, y también hemos intoducido una guía web, una guía para usar git desde la consola y otra guía para la aplciación de escritorio.
+
+Consideramos que ésta es una herramienta indispensable para la vida tanto académica como laboral de cualquier desarrollador, ya que en los últimos años se ha convertido en la herramienta estándar para compartir nuestro código y para colaborar en otros proyectos. También es importante a la hora de buscar trabajo, ya que cada vez más las empresas piden el perfil de Github para ver el código que hacen sus empleados y las contribuciones realizadas.
 
