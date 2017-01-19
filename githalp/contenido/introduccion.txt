@@ -1,4 +1,4 @@
-<p>Hemos creado una página web a modo de tutorial para fomentar el uso de la gran herramienta Github, y lo hemos hecho a través de una página web ya que creemos que es la mejor forma para hacer llegar la información al mayor número de personas. </p>
+<p>Hemo creado una página web a modo de tutorial para fomentar el uso de la gran herramienta Github, y lo hemos hecho a través de una página web ya que creemos que es la mejor forma para hacer llegar la información al mayor número de personas. </p>
 
 Además, hemos hecho vídeos explicativos de la herramienta, y también hemos intoducido una guía web, una guía para usar git desde la consola y otra guía para la aplicación de escritorio.
 
