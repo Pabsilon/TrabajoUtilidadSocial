@@ -21,7 +21,7 @@
 		<div id="centro">
 			<h1>Introducción</h1>
 			<p><?php
-					require_once 'contenido/introduccion.txt';
+					require_once 'contenido/introduccion.html';
 				?></p>
 		</div>
 	</div>
