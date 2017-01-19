@@ -1,6 +1,6 @@
-<p>Hemo creado una página web a modo de tutorial para fomentar el uso de la gran herramienta Github, y lo hemos hecho a través de una página web ya que creemos que es la mejor forma para hacer llegar la información al mayor número de personas. </p>
+<p>Hemos creado una página web a modo de tutorial para fomentar el uso de la gran herramienta Github, y lo hemos hecho a través de una página web ya que creemos que es la mejor forma para hacer llegar la información al mayor número de personas. </p>
 
-Además, hemos hecho vídeos explicativos de la herramienta, y también hemos intoducido una guía web, una guía para usar git desde la consola y otra guía para la aplicación de escritorio.
+<p>Además, hemos hecho vídeos explicativos de la herramienta, y también hemos intoducido una guía web, una guía para usar git desde la consola y otra guía para la aplicación de escritorio.</p>
 
-Consideramos que esta es una herramienta indispensable para la vida tanto académica como laboral de cualquier desarrollador, ya que en los últimos años se ha convertido en la herramienta estándar para compartir nuestro código y para colaborar en otros proyectos. También es importante a la hora de buscar trabajo, ya que cada vez más las empresas piden el perfil de Github para ver el código que hacen sus empleados y las contribuciones realizadas.
+<p>Consideramos que esta es una herramienta indispensable para la vida tanto académica como laboral de cualquier desarrollador, ya que en los últimos años se ha convertido en la herramienta estándar para compartir nuestro código y para colaborar en otros proyectos. También es importante a la hora de buscar trabajo, ya que cada vez más las empresas piden el perfil de Github para ver el código que hacen sus empleados y las contribuciones realizadas.</p>
 
