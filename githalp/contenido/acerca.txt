@@ -1,1 +1,4 @@
-Somos un equipo de …
+Este proyecto se inició para la asignatura de Ética, Legislación y Profesión, somos un grupo de estudiantes de ingeniería informática de la Universidad Complutense de Madrid, venimos de todas las partes del mundo, pero tenemos algo en común... nos mueve el entusiasmo por ayudar a la gente y que al final, puedan sacar una experiencia positiva de ello. 
+<br>
+Por este motivo decidimos crear <b>GitHalp</b>, un lugar para quienes lo deseen, puedan adquirir unas bases muy útiles para este gestor de contenidos tan demandado y que más adelante, por cuenta propia, pueda profundizar en él y desarrollar sus conocimientos. 
+<br>
