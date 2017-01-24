@@ -24,33 +24,21 @@
 				no dudes en mandarnos un correo con el formulario que hay a continuacion. Un saludo de parte del 
 				equipo de GitHalp.
 
-			<center><form name="frmContacto" method="post" action="formcont.php">
-                <table width="500px">
-                <tr>
-                    <td><label for="first_name">Nombre: *</label></td>
-                    <td><input type="text" name="first_name" maxlength="50" size="25"></td>
-                </tr>
-                <tr>
-                    <td valign="top""><label for="last_name">Apellido: *</label></td>
-                    <td><input type="text" name="last_name" maxlength="50" size="25"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Dirección de E-mail: *</label></td>
-                    <td><input type="text" name="email" maxlength="80" size="35"></td>
-                </tr>
-                <tr>
-                    <td><label for="telephone">Número de teléfono:</label></td>
-                    <td><input type="text" name="telephone" maxlength="25" size="15"></td>
-                </tr>
-                <tr>
-                    <td><label for="comments">Comentarios: *</label></td>
-                    <td><textarea name="comments" maxlength="500" cols="30" rows="5"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center"><input type="submit" value="Enviar"></td>
-                </tr>
-                </table>
-    		</form></center>
+			<center>
+				<form action="formcont.php" method="post">
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+					<input type="text" name="asunto" id="asunto" placeholder="Asunto">
+					<input type="text" name="correo" id="correo" placeholder="Correo" required>
+					<textarea name="mensaje" id="mensaje" placeholder="Escribe el mensaje..." required></textarea>
+
+					<input type="submit" value="ENVIAR" id="boton">
+				</form>
+				<style>
+					input, textarea{
+						width: 50%;
+					}
+				</style>
+			</center>
 
 				<?php 
 					require 'formcont.php';
