@@ -20,9 +20,9 @@
 	<div id="contenedor">
 		<div id="centro">
 			<h1>Introducción</h1>
+			<img id="gifGit" src="giphy.gif"/>
 			<p><?php
 					require_once 'contenido/introduccion.html';
-					<img id="gifGit" src="giphy.gif"/>
 				?></p>
 		</div>
 	</div>
