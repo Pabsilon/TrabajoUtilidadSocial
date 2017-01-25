@@ -34,7 +34,7 @@
 <br>
 <br>
 
-	<h3>2) git init<h3>
+	<h3>2) git init</h3>
 <br>
 		<p>Para crear un nuevo repositorio, navegaremos hasta una carpeta vacía, y ejecutamos el comando</p>
 		<br>
@@ -103,7 +103,7 @@
 		<br>
 		<br>
 
-	<h3>5) git add<h3>
+	<h3>5) git add</h3>
 	<br>
 
 		<p>Git add es un comando que puede coger expresiones regulares, o nombres de archivos o carpetas. Se puede ejecutar varias veces y va añadiendo succesivamente los nuevos elementos al commit.</p>
@@ -178,7 +178,7 @@
 <br>
 <br>
 <br>
-<h2>Ramas:<h2>
+<h2>Ramas:</h2>
 <br>
 <br>
 	
