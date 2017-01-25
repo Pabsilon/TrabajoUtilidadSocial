@@ -1,134 +1,239 @@
-Git en consola.
+<html>
+<body>
+<article>
 
-- ¿Porqué utlizar git por consola?
-	-En la inmensa mayoría de las empresas, e incluso durante la carrera, nos encontramos con que tenemos que operar en máquinas en las que no tendremos acceso físico. En estas máquinas tenemos que desplegar código que hemos desarrollado, y la mejor forma de trasladar ese código a la máquina y mantenerlo actualizado es usar Git.
+<header>
+<h1>Git en consola.</h1>
+</header>
 
-- ¿Hay alguna forma más fácil?
-	-Siempre hay formas de automatizar tu trabajo en UNIX. Pero para escribir un script de bash que automatice toda tu tarea, necesitas saber como funciona Git.
+<h3>- ¿Porqué utlizar git por consola?</h3>
+<br>
+	<p>-En la inmensa mayoría de las empresas, e incluso durante la carrera, nos encontramos con que tenemos que operar en máquinas en las que no tendremos acceso físico. En estas máquinas tenemos que desplegar código que hemos desarrollado, y la mejor forma de trasladar ese código a la máquina y mantenerlo actualizado es usar Git.</p>
+<br>
+<h3>- ¿Hay alguna forma más fácil?</h3>
+<br>
+	<p>-Siempre hay formas de automatizar tu trabajo en UNIX. Pero para escribir un script de bash que automatice toda tu tarea, necesitas saber como funciona Git.</p>
+<br>
+<br>
 
+<h2>Bases:</h2>
+<br>
+<br>
+	<h3>1) git config</h3>
+<br>
+		<p>La primera vez que vamos a utilizar git en un sistema, o un usuario, git config permite elegir aspectos básicos de como lo vamos a usar.</p>
+<br>
+		<p>Las configuraciones se pueden hacer a nivel Local, Global o de Sistema. Lo mas normal si es un ordenador personal, utilizar la configuración global:</p>
+		<br>
+		<br>
+			<div>git config --global user.name "Tu nombre"
+			git config --global user.email "abc@ucm.es"</div>
+		<br>
+		<br>
+		<p>Esta información está disponible en el archivo ~/.gitconfig, accesible vía cat.</p>
+<br>
+<br>
 
-Bases:
+	<h3>2) git init<h3>
+<br>
+		<p>Para crear un nuevo repositorio, navegaremos hasta una carpeta vacía, y ejecutamos el comando</p>
+		<br>
+		<br>
 
-	1) git config
+			<div>git init</div>
+			<br>
+			<br>
 
-		La primera vez que vamos a utilizar git en un sistema, o un usuario, git config permite elegir aspectos básicos de como lo vamos a usar.
-		Las configuraciones se pueden hacer a nivel Local, Global o de Sistema. Lo mas normal si es un ordenador personal, utilizar la configuración global:
+		<p>Esto crea una nueva carpeta oculta, .git que guarda toda la información sobre tu trabajo. Ahora podemos trabajar.</p>
+<br>
+<br>
 
-			git config --global user.name "Tu nombre"
-			git config --global user.email "abc@ucm.es"
+	<h3>3) git clone</h3>
+<br>
+		<p>En caso de querer copiar un repositorio remoto (por ejemplo, de GitHub) utilizaremos este comando.</p>
+		<br>
+		<br>
 
-		Esta información está disponible en el archivo ~/.gitconfig, accesible vía cat.
+			<div>git clone <dirección del .git></div>
+		<br>
+		<br>
 
-	2) git init
+			</p>Por ejemplo, el proyecto curricular de freeCodeCamp sería:</p>
+			<br>
+			<br>
 
-		Para crear un nuevo repositorio, navegaremos hasta una carpeta vacía, y ejecutamos el comando
+				<div>git clone https://github.com/freeCodeCamp/freeCodeCamp.git<div>
+			<br>
+			<br>
 
-			git init
+		<p>Esto crea una copia funcional de proyecto, pero no podríamos subir código al repositorio original. Tenemos una copia personal.</p>
+<br>
+<br>
+	<h3>4) git remote</h3>
+	<br>
 
-		Esto crea una nueva carpeta oculta, .git que guarda toda la información sobre tu trabajo. Ahora podemos trabajar.
+		<p>Para poder utilizar un repositorio remoto, es decir, al que contribuir nosotros, ya porque sea nuestro, o nos hayan invitado a participar, debemos configurar el 'origen', que se haría de esta manera en Github:</p>
+		<br>
+		<br>
 
-	3) git clone
+			<div>git remote add origin https://github.com/NOMBREDEUSUARIO/REPOSITORIO.git</div>
+		<br>
+		<br>
 
-		En caso de querer copiar un repositorio remoto (por ejemplo, de GitHub) utilizaremos este comando.
+		<p>Para que este comando funcione, necesitamos tener un repositorio creado en Github. Este repositorio podría estar vacío, o contener un proyecto que ya está en marcha.</p>
+<br>
 
-			git clone <dirección del .git>
+		<p>A la vez, nos permite utilizar los dos siguientes comandos:<p>
+		<br>
+		<br>
 
-			Por ejemplo, el proyecto curricular de freeCodeCamp sería:
+			<div>git pull</div>
+		<br>
+		<br>
 
-				git clone https://github.com/freeCodeCamp/freeCodeCamp.git
+		<p>Que es como un git clone, salvo que sin crear una copia. Coje el proyecto en el origen, busca diferencias con la copia local que tenemos, y nos deja el repositorio en el estado mas reciente del origen. (Pedir la última versión)</p>
+		<br>
+		<br>
 
-		Esto crea una copia funcional de proyecto, pero no podríamos subir código al repositorio original. Tenemos una copia personal.
+			<div>git push</div>
+		<br>
+		<br>
 
-	4) git remote
+		<p>Que funciona al opuesto que el git pull. Utilizaremos los commits (punto número 6) que hayamos creado y se los aplicamos al origen. (Subir la última versión)</p>
+		<br>
+		<br>
 
-		Para poder utilizar un repositorio remoto, es decir, al que contribuir nosotros, ya porque sea nuestro, o nos hayan invitado a participar, debemos configurar el 'origen', que se haría de esta manera en Github:
+	<h3>5) git add<h3>
+	<br>
 
-			git remote add origin https://github.com/NOMBREDEUSUARIO/REPOSITORIO.git
+		<p>Git add es un comando que puede coger expresiones regulares, o nombres de archivos o carpetas. Se puede ejecutar varias veces y va añadiendo succesivamente los nuevos elementos al commit.</p>
+		<br>
+		<br>
 
-		Para que este comando funcione, necesitamos tener un repositorio creado en Github. Este repositorio podría estar vacío, o contener un proyecto que ya está en marcha.
+			<div>git add *			Esto lanzado desde la raiz del proyecto añadiría todos los cambios efectuados desde el último commit
+			git add ejemplos/*	Esto añadiría todo lo cambiado en la carpeta ejemplos únicamente.</div>
+		<br>
+		<br>
 
-		A la vez, nos permite utilizar los dos siguientes comandos:
+		<p>Para ver que archivos podrían añadirse al commit, utilizamos el comando:</p>
+		<br>
+		<br>
 
-			git pull
+			<div>git status</div>
+		<br>
+		<br>
 
-		Que es como un git clone, salvo que sin crear una copia. Coje el proyecto en el origen, busca diferencias con la copia local que tenemos, y nos deja el repositorio en el estado mas reciente del origen. (Pedir la última versión)
+		<p>Que muestra dos tipos de archivos:<p>
+		<br>
+			<p>Untracked - Archivos nuevos que no existen en la versión anterior.</p>
+			<p>Modified - Archivos que hemos modificado desde la version anterior.<p>
 
-			git push
+		<p>Ambos tipos se añaden igual.<p>
+<br>
+<br>
+	<h3>6) git commit</h3>
+<br>
+		<p>Git commit es el comando mas importante. Este comando coje todo lo añadido con 'git add' y lo empaqueta de manera que:</p>
+			<p>1) Siempre podamos volver a este punto</p>
+			<p>2) Cualquier persona que esté por detrás pueda llegar a este punto</p>
+			<br>
 
-		Que funciona al opuesto que el git pull. Utilizaremos los commits (punto número 6) que hayamos creado y se los aplicamos al origen. (Subir la última versión)
+		<p>Es buena práxis dejar un comentario breve sobre los cambios efectuados. En consola esto se hace de la siguiente manera:</p>
+		<br>
+		<br>
 
-	5) git add
+			<div>git commit -m "Resuelto el bug que provocaba en el robot ganas irrefrenables de matar"</div>
+			<br>
+			<br>
 
-		Git add es un comando que puede coger expresiones regulares, o nombres de archivos o carpetas. Se puede ejecutar varias veces y va añadiendo succesivamente los nuevos elementos al commit.
+		<p>Todos estos commits se pueden ver en el log:</p>
+		<br>
+		<br>
+			<div>git log</div>
+		<br>
+		<br>
 
-			git add *			Esto lanzado desde la raiz del proyecto añadiría todos los cambios efectuados desde el último commit
-			git add ejemplos/*	Esto añadiría todo lo cambiado en la carpeta ejemplos únicamente.
-
-		Para ver que archivos podrían añadirse al commit, utilizamos el comando:
-
-			git status
-
-		Que muestra dos tipos de archivos:
-			Untracked - Archivos nuevos que no existen en la versión anterior
-			Modified - Archivos que hemos modificado desde la version anterior.
-
-		Ambos tipos se añaden igual.
-
-	6) git commit
-
-		Git commit es el comando mas importante. Este comando coje todo lo añadido con 'git add' y lo empaqueta de manera que:
-			1) Siempre podamos volver a este punto
-			2) Cualquier persona que esté por detrás pueda llegar a este punto
-
-		Es buena práxis dejar un comentario breve sobre los cambios efectuados. En consola esto se hace de la siguiente manera:
-
-			git commit -m "Resuelto el bug que provocaba en el robot ganas irrefrenables de matar"
-
-		Todos estos commits se pueden ver en el log:
-
-			git log
-
-		Que como vemos, van añadidos de un hash único.
-		En caso de querer volver atrás a un cierto commit, necesitamos este hash.
-			Para descartar todos los cambios y volver al último commit:
-				git reset --hard
-			Para descartar todos los cambios y volver a cierto commit:
-				git reset --hard <HASH>
-			Para guardar los cambios que tenemos hasta ahora (Quizás el último commit era completamente erroneo y estabamos trabajando):
-				git stash
+		<p>Que como vemos, van añadidos de un hash único.</p>
+		<p>En caso de querer volver atrás a un cierto commit, necesitamos este hash.</p>
+			<p>Para descartar todos los cambios y volver al último commit:</p>
+			<br>
+			<br>
+				<div>git reset --hard</div>
+			<br>
+			<br>
+			<p>Para descartar todos los cambios y volver a cierto commit:</p>
+			<br>
+			<br>
+				<div>git reset --hard <HASH></div>
+			<br>
+			<br>
+			<p>Para guardar los cambios que tenemos hasta ahora (Quizás el último commit era completamente erroneo y estabamos trabajando):</p>
+				<div>git stash
 				git reset --hard <HASH> //Por supuesto lo hacemos a un commit anterior, hacerlo al último sería absurdo.
-				git stash pop
-			Git stash guarda temporalmente los cambios que tenemos.
-
-Ramas:
+				git stash pop</div>
+			<br>
+			<br>
+			<p>Git stash guarda temporalmente los cambios que tenemos.</p>
+			
+<br>
+<br>
+<br>
+<h2>Ramas:<h2>
+<br>
+<br>
 	
-	Las ramas en Git, permite a varias personas trabajar en un proyecto sin pisarse cambios. Cuando alguien termina una rama, incorpora sus cambios a la rama principal (Aunque normalmente sería la rama de DEV)
+	<p>Las ramas en Git, permite a varias personas trabajar en un proyecto sin pisarse cambios. Cuando alguien termina una rama, incorpora sus cambios a la rama principal (Aunque normalmente sería la rama de DEV)</p>
 
-	Si nos encontramos con la necesidad de crear una rama, utilizamos el comando
+	<p>Si nos encontramos con la necesidad de crear una rama, utilizamos el comando</p>
+	<br>
+	<br>
 
-		git checkout -b <Nombre de Rama>
+		<div>git checkout -b <Nombre de Rama></div>
+	<br>
+	<br>
 
-	Esto nos cambia automáticamente a nuestra rama "Nombre de Rama"
-	Al utilizar el comando:
+	<p>Esto nos cambia automáticamente a nuestra rama "Nombre de Rama"</p>
+	<p>Al utilizar el comando:</p>
+	<br>
+	<br>
 
-		git branch
+		<div>git branch</div>
+		<br>
+		<br>
 
-	Vemos todas las ramas que hay, con la actual resaltada en verde.
-	Para cambiar entre ramas, utilizamos el comando:
+	<p>Vemos todas las ramas que hay, con la actual resaltada en verde.</p>
+	<p>Para cambiar entre ramas, utilizamos el comando:</p>
+	<br>
+	<br>
 
-		git checkout <Nombre de Rama>
+		<div>git checkout <Nombre de Rama></div>
+		<br>
+		<br>
 
-	Todos los cambios en la rama se matendrán isolados del resto, hasta que decidamos hacer un merge.
+	<p>Todos los cambios en la rama se matendrán isolados del resto, hasta que decidamos hacer un merge.</p>
+	<br>
 
-	El merge es una de las acciones mas complicadas. Se resuelven diferencias, y en caso de no poder hacerse automáticamente (Dos personas en ramas distintas han cambiado de manera distinta código) le toca al usuario elegir qué cambio usar, y qué cambio eliminar.
-	Debido al a dificultad en caso de conflicto, no recomendamos gestionar un merge en una máquina remota, ya que hoy en día hay muchas herramientas con GUI que simplifican mucho la tarea. En caso de que no haya confictos, el merge se realiza de la siguiente manera:
+	<p>El merge es una de las acciones mas complicadas. Se resuelven diferencias, y en caso de no poder hacerse automáticamente (Dos personas en ramas distintas han cambiado de manera distinta código) le toca al usuario elegir qué cambio usar, y qué cambio eliminar.</p>
+	<p>Debido al a dificultad en caso de conflicto, no recomendamos gestionar un merge en una máquina remota, ya que hoy en día hay muchas herramientas con GUI que simplifican mucho la tarea. En caso de que no haya confictos, el merge se realiza de la siguiente manera:</p>
+	<br>
 
-		Cambiamos a la rama en la que queremos conservar los cambios:
+		<p>Cambiamos a la rama en la que queremos conservar los cambios:</p>
+		<br>
+		<br>
 
-		git checkout master (master es la rama por defecto)
+		<div>git checkout master (master es la rama por defecto)</div>
+		<br>
 
-		git merge <Nombre de Rama>
+		<div>git merge <Nombre de Rama></div>
+		<br>
+		<br>
 
-		A este último comando le podemos añadir el parámetro --commit -m "mensaje" para que efectue automáticamente el commit. (En efecto, hay que commitear cualquier cambio, incluido un merge)
+		<p>A este último comando le podemos añadir el parámetro --commit -m "mensaje" para que efectue automáticamente el commit. (En efecto, hay que commitear cualquier cambio, incluido un merge)</p>
+		<br>
+		<br>
 
-Con esto debería ser suficente para desplegar algo en un servidor, donde normalmente no habría que hacer cambios, pero a veces hay que cambiar alguna constante, parámetros específicos, o hacer correcciones rápidas.
+<p>Con esto debería ser suficente para desplegar algo en un servidor, donde normalmente no habría que hacer cambios, pero a veces hay que cambiar alguna constante, parámetros específicos, o hacer correcciones rápidas.</p>
+
+</article>
+</body>
+</html
