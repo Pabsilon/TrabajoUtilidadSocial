@@ -1,5 +1,11 @@
 <html>
 <body>
+<style>
+div {
+border: 1px solid gray;
+}
+</style>
+
 <article>
 
 <header>
@@ -236,4 +242,4 @@
 
 </article>
 </body>
-</html
+</html>
