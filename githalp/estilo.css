@@ -97,3 +97,11 @@ iframe{
 	width: 200px;
 	height: auto;
 }
+
+.codigo{
+	font-family: monospace;
+    background-color: #F7F7F7;
+    width: auto;
+	padding: 15px;
+	border-radius: 8px;
+}

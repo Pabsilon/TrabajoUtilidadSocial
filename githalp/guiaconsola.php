@@ -21,7 +21,7 @@
 		<div id="centro">
 			<h1>Guía de la consola de comandos</h1>
 			<p><?php
-					require_once 'contenido/guiaConsola.txt';
+					require_once 'contenido/guiaConsola.html';
 				?></p>
 		</div>
 	</div>

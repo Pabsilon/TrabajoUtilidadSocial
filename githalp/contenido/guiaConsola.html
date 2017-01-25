@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <body>
 
@@ -27,7 +28,7 @@
 		<p>Las configuraciones se pueden hacer a nivel Local, Global o de Sistema. Lo mas normal si es un ordenador personal, utilizar la configuración global:</p>
 		<br>
 		<br>
-			<div>git config --global user.name "Tu nombre"
+			<div class="codigo">git config --global user.name "Tu nombre"
 			git config --global user.email "abc@ucm.es"</div>
 		<br>
 		<br>
@@ -41,7 +42,7 @@
 		<br>
 		<br>
 
-			<div>git init</div>
+			<div class="codigo">git init</div>
 			<br>
 			<br>
 
@@ -55,7 +56,7 @@
 		<br>
 		<br>
 
-			<div>git clone <dirección del .git></div>
+			<div class="codigo">git clone <dirección del .git></div>
 		<br>
 		<br>
 
@@ -63,7 +64,7 @@
 			<br>
 			<br>
 
-				<div>git clone https://github.com/freeCodeCamp/freeCodeCamp.git<div>
+				<div class="codigo">git clone https://github.com/freeCodeCamp/freeCodeCamp.git</div>
 			<br>
 			<br>
 
@@ -77,7 +78,7 @@
 		<br>
 		<br>
 
-			<div>git remote add origin https://github.com/NOMBREDEUSUARIO/REPOSITORIO.git</div>
+			<div class="codigo">git remote add origin https://github.com/NOMBREDEUSUARIO/REPOSITORIO.git</div>
 		<br>
 		<br>
 
@@ -88,7 +89,7 @@
 		<br>
 		<br>
 
-			<div>git pull</div>
+			<div class="codigo">git pull</div>
 		<br>
 		<br>
 
@@ -96,7 +97,7 @@
 		<br>
 		<br>
 
-			<div>git push</div>
+			<div class="codigo">git push</div>
 		<br>
 		<br>
 
@@ -111,8 +112,10 @@
 		<br>
 		<br>
 
-			<div>git add *			Esto lanzado desde la raiz del proyecto añadiría todos los cambios efectuados desde el último commit
-			git add ejemplos/*	Esto añadiría todo lo cambiado en la carpeta ejemplos únicamente.</div>
+			<div class="codigo">git add *</div>
+			<p>Esto lanzado desde la raiz del proyecto añadiría todos los cambios efectuados desde el último commit
+			<div class="codigo">git add ejemplos/*</div>
+			<p>Esto añadiría todo lo cambiado en la carpeta ejemplos únicament</p>
 		<br>
 		<br>
 
@@ -120,7 +123,7 @@
 		<br>
 		<br>
 
-			<div>git status</div>
+			<div class="codigo">git status</div>
 		<br>
 		<br>
 
@@ -143,14 +146,14 @@
 		<br>
 		<br>
 
-			<div>git commit -m "Resuelto el bug que provocaba en el robot ganas irrefrenables de matar"</div>
+			<div class="codigo">git commit -m "Resuelto el bug que provocaba en el robot ganas irrefrenables de matar"</div>
 			<br>
 			<br>
 
 		<p>Todos estos commits se pueden ver en el log:</p>
 		<br>
 		<br>
-			<div>git log</div>
+			<div class="codigo">git log</div>
 		<br>
 		<br>
 
@@ -159,17 +162,17 @@
 			<p>Para descartar todos los cambios y volver al último commit:</p>
 			<br>
 			<br>
-				<div>git reset --hard</div>
+				<div class="codigo">git reset --hard</div>
 			<br>
 			<br>
 			<p>Para descartar todos los cambios y volver a cierto commit:</p>
 			<br>
 			<br>
-				<div>git reset --hard <HASH></div>
+				<div class="codigo">git reset --hard <HASH></div>
 			<br>
 			<br>
 			<p>Para guardar los cambios que tenemos hasta ahora (Quizás el último commit era completamente erroneo y estabamos trabajando):</p>
-				<div>git stash
+				<div class="codigo">git stash
 				git reset --hard <HASH> //Por supuesto lo hacemos a un commit anterior, hacerlo al último sería absurdo.
 				git stash pop</div>
 			<br>
@@ -189,7 +192,7 @@
 	<br>
 	<br>
 
-		<div>git checkout -b <Nombre de Rama></div>
+		<div class="codigo">git checkout -b <Nombre de Rama></div>
 	<br>
 	<br>
 
@@ -198,7 +201,7 @@
 	<br>
 	<br>
 
-		<div>git branch</div>
+		<div class="codigo">git branch</div>
 		<br>
 		<br>
 
@@ -207,7 +210,7 @@
 	<br>
 	<br>
 
-		<div>git checkout <Nombre de Rama></div>
+		<div class="codigo">git checkout <Nombre de Rama></div>
 		<br>
 		<br>
 
@@ -222,10 +225,10 @@
 		<br>
 		<br>
 
-		<div>git checkout master (master es la rama por defecto)</div>
+		<div class="codigo">git checkout master (master es la rama por defecto)</div>
 		<br>
 
-		<div>git merge <Nombre de Rama></div>
+		<div class="codigo">git merge <Nombre de Rama></div>
 		<br>
 		<br>
 
