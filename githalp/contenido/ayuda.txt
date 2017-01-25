@@ -1,1 +1,13 @@
-Esto es una prueba de lo que se puede meter en el contenido de <b>Ayuda</b>
+Aquí puedes resolver tus dudas con respecto a GitHalp. Si no encuentras la respuesta que buscas puedes acudir a nuestra sección de contacto.
+<br>
+<ul>
+				<li><a href=#>Teoría</a></li>
+					<ul>Interfaz de consola</ul>
+					<ul>App de escritorio</ul>
+					<ul>Guia básica</ul>
+				<li><a href=galeriavideos.php>Videos</a></li>
+				<li> <br> </li>
+				<li> <br> </li>
+				<li> <br> </li>
+				<li><a href=https://github.com/Pabsilon/TrabajoUtilidadSocial>GitHub</a></li>
+</ul>
