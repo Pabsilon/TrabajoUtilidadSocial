@@ -19,11 +19,9 @@
 	<div id="contenedor">
 		<div id="centro">
 			<h1>Ayuda</h1>
-			<p>
-				<?php
-					require_once 'contenido/ayuda.txt';
-				?>
-			</p>
+			<?php
+				require_once 'contenido/ayuda.html';
+			?>
 		</div>
 	</div>
 
