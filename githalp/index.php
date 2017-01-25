@@ -22,6 +22,7 @@
 			<h1>Introducción</h1>
 			<p><?php
 					require_once 'contenido/introduccion.html';
+					<img id="gifGit" src="giphy.gif"/>
 				?></p>
 		</div>
 	</div>
