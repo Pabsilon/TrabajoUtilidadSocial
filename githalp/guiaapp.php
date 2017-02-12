@@ -21,7 +21,7 @@
 		<div id="centro">
 			<h1>Guía de la aplicación de escritorio</h1>
 			<p><?php
-					require_once 'contenido/guiaApp.txt';
+					require_once 'contenido/guiaApp.html';
 				?></p>
 		</div>
 	</div>

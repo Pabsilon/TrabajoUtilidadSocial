@@ -1,0 +1,54 @@
+
+<p>Si no estás familiarizado con el uso de ninguna shell o te cuesta manejarte en git con comandos hay una segunda opción que te puede hacer la vida más fácil para las acciones básicas:<br><br><strong><a class="link" href="https://desktop.github.com/">La aplicación GitHub Desktop</a></strong></p><br>
+<p>Es muy fácil de instalar. Para hacer esta guía se ha seguido en parte el tutorial integrado en la aplicación y se ha mejorado, te recomendamos que lo sigas junto a esta guía. Cuando hayas terminado de instalar el programa ábrelo para comenzar.</p>
+
+<ol>
+
+<h3><li>Vista general de la interfaz</li></h3>
+<p>Antes de empezar a ver las funciones de la aplicación vamos a echar un vistazo por la interfaz gráfica:</p>
+<ul>
+<li>En el lado <strong>izquierdo</strong> tenemos la lista de repositorios en los que colaboras, ya sean creados por ti o por otras personas. También están las opciones para añadir, crear o clonar repositorios:</li>
+<img class="capturas" src="../Images/izqda.png"/>
+<li>La zona <strong>superior</strong> está compuesta por el selector de ramas, el selector de vista de cambios y commits, los botones de ajustes, sync y pull request, y la línea temporal de los distintos commits hechos en cada rama.</li>
+<img class="capturas" src="../Images/sup.png"/>
+<li>La vista <strong>"Changes"</strong> permite ver los cambios que se han hecho en cada archivo del commit seleccionado (en la línea superior). Si es el trabajo que estás realizando en ese momento esta es la ventana donde puedes hacer el commit.</li>
+<img class="capturas" src="../Images/changes.png"/>
+<li>Por último, la vista <strong>"History"</strong> muestra una vista general de todos los commits que se han hecho en la rama seleccionada.</li>
+<img class="capturas" src="../Images/history.png"/>
+</ul>
+
+
+<h3><li>Crear un repositorio</li></h3>
+<p>Primero vamos a crear un repositorio desde cero. Para ello haz click en la esquina superior derecha. Dale un nombre al repositorio y elige la carpeta en la que quieres almacenarlo.</p>
+<img class="capturas" src="../Images/create.png"/>
+
+<h3><li>Crear una rama</li></h3>
+<p>Todo desarrollo está estructurado en ramas para que cada desarrollador pueda ir trabajando por su cuenta sin modificar las versiones principales del proyecto, las cuales deben estar en la rama por defecto (<strong>master</strong>). Para ello tenemos que empezar por crear la rama principal:</p>
+<p>Haz click en el símbolo señalado en la <strong>imagen</strong>. Igual que con la creación del repositorio, hay que darle un nombre representativo a la rama.</p>
+<img class="capturas" src="../Images/createBranch.png"/>
+<p>Ahora la rama aparece en la barra superior:</p>
+<img class="capturas" src="../Images/newBranch.png"/>
+
+<h3><li>Realizar un "commit"</li></h3>
+<p>Una vez que ya tengas la rama creada ya puedes empezar a trabajar. Según vayas haciendo cambios en tu trabajo estos irán apareciendo en tiempo real en la aplicación. Cuando termines de actualizar alguno de tus archivos o hagas cambios importantes ya puedes realizar un commit para que en caso de que quieras recuperar ese trabajo en el futuro o quieras revertir cambios puedas contar con este commit.</p>
+<p>Proporciona un pequeño resumen en el campo "Summary" y una descripción más detallada en "Description". Finalmente haz click en "Commit to..." para aplicarlo en la rama actual.</p>
+<img class="capturas" src="../Images/commit.png"/>
+<p>Ahora el commit aparece en la línea temporal:</p>
+<img class="capturas" src="../Images/lineacom.png"/>
+
+<h3><li>"Pull request"</li></h3>
+<p>Una vez que hayas completado el desarrollo en esa rama que creaste es hora de añadirlo a la rama "master". La función del "pull request" es hacer una solictud necesaria para ello. Si la solicitud es aceptada entonces se hará un "merge" en ese momento. Por simplicidad, en el tutorial se hará un "merge" automático.</p>
+<p>Haz click en el botón "pull request" de la esquina superior derecha y haz click en "Send pull request".</p>
+<img class="capturas" src="../Images/preq.png"/>
+
+<h3><li>Revertir cambios</li></h3>
+<p>Siempre se pueden revertir los cambios hechos en cualquier commit. En la vista "History" busca el commit que quieras deshacer y pulsa en "Revert". La aplicación creará automáticamente un nuevo commit con esos cambios quitados.</p>
+<img class="capturas" src="revert.png"/>
+
+<h3><li>El botón "Sync"</li></h3>
+<p>Y para acabar esta guía básica hay que hablar del botón más importante de toda la aplicación: <strong>El botón "Sync"</strong>.</p>
+<p>¿Por qué es tan importante? Porque es el botón que <strong>sincroniza</strong> los archivos que hay en el repositorio local y en el remoto de Github. En proyectos en los que participas con otras personas es fundamental que lo utilices siempre antes de empezar a trabajar o de realizar un commit (para tener la última versión de lo que hayan trabajado tus compañeros) y al terminar (para subir al repositorio tus cambios).</p>
+<p>¿Qué hace el botón en realidad? Básicamente realiza 2 acciones que se pueden traducir a 2 comandos de la shell: <strong>pull</strong> para descargar los cambios del repositorio remoto, y <strong>push</strong> para subir tus cambios.</p>
+<img src="../Images/sync.png"/>
+
+</ol>

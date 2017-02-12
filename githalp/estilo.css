@@ -35,7 +35,6 @@ nav{
 	border-radius: 8px;
 }
 
-
 a{
 	display: block;
 	color: black;
@@ -46,7 +45,7 @@ a.link{
 	color: blue;
 }
 a.link:hover{
-	color: red
+	color: red;
 }
 
 #logo{
@@ -104,4 +103,14 @@ iframe{
     width: auto;
 	padding: 15px;
 	border-radius: 8px;
+}
+
+img.capturas{
+	width: auto;
+	max-width: 80%;
+	margin: 5%;
+	height: auto;
+	vertical-align: middle;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }

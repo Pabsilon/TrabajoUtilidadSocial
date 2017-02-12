@@ -21,7 +21,7 @@
 		<div id="centro">
 			<h1>Guía de la web de GitHub</h1>
 			<p><?php
-					require_once 'contenido/guiaWeb.txt';
+					require_once 'contenido/guiaWeb.html';
 				?></p>
 		</div>
 	</div>
