@@ -3,7 +3,7 @@
 		<li> <a href="#"> <img src="github.png" class="navIcon"/> GitHalp &copy; 2017 </a></li>
 
 		<li style="display:inline;"><a href="index.php"> <img src="inicio.png" class="navIcon"/> Inicio </a></li>
-		<li style="display:inline;"><a href=""> <img src="contact.png" class="navIcon"/> Contáctanos </a></li>
+		<li style="display:inline;"><a href="contacto.php"> <img src="contact.png" class="navIcon"/> Contáctanos </a></li>
 		<li style="display:inline;"><a href="ayuda.php"> <img src="question1.png" class="navIcon"/> Ayuda </a></li>
 		<li style="display:inline;"><a href="acerca.php">  <img src="about.png" class="navIcon"/> Acerca de </a></li>
 	</ul>

@@ -17,33 +17,23 @@
 	?>
 
 	<div id="contenedor">
-		<div id="centro">
-			<h1>Contactanos</h1>
-			<p>
-				Si ves que hay algo en la web que no te termina de encajar o simplemente quieres saludarnos, 
-				no dudes en mandarnos un correo con el formulario que hay a continuacion. Un saludo de parte del 
-				equipo de GitHalp.
+		<h1>Contáctanos</h1>
+		<p>Si ves que hay algo en la web que no te termina de encajar o simplemente quieres saludarnos, no dudes en mandarnos un correo con el formulario que hay a continuacion. Un saludo de parte del equipo de GitHalp.</p>
 
-			<center>
-				<form action="formcont.php" method="post">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-					<input type="text" name="asunto" id="asunto" placeholder="Asunto">
-					<input type="text" name="correo" id="correo" placeholder="Correo" required>
-					<textarea name="mensaje" id="mensaje" placeholder="Escribe el mensaje..." required></textarea>
+		<div id="formulario">
+			<form action="formcont.php" method="post">
+				<label for="nombre">Nombre*:</label>
+				<input type="text" name="nombre" id="nombre" required/>
+				<label for="asunto">Asunto:</label>
+				<input type="text" name="asunto" id="asunto"/>
+				<label for="correo">Correo*:</label>
+				<input type="text" name="correo" id="correo" required/>
+				<label for="mensaje">Mensaje*:</label>
+				<textarea name="mensaje" id="mensaje" placeholder="Escribe el mensaje" rows="5" required></textarea>
 
-					<input type="submit" value="ENVIAR" id="boton">
-				</form>
-				<style>
-					input, textarea{
-						width: 50%;
-					}
-				</style>
-			</center>
+				<input type="submit" value="ENVIAR" id="boton"/>
+			</form>
 
-				<?php 
-					require 'formcont.php';
-				?>
-			</p>
 		</div>
 	</div>
 
