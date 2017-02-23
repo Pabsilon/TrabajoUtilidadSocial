@@ -114,3 +114,38 @@ img.capturas{
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
+
+#formulario{
+	padding: 5%;
+	background-color: #F2F2F2;
+	border: 1px solid #000000;
+	border-radius: 8px;
+}
+
+input[type=text], textarea{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#boton {
+	min-width: auto;
+	width: 15%;
+	margin: auto;
+}
+input[type=submit]{
+	background-color: white;
+	width: 100%;
+	padding: 3px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+}
+input[type=submit]:hover {
+	border: 2px solid #000000;
+    background-color: #3399FF;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
