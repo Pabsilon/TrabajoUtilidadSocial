@@ -49,16 +49,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$mensaje = test_input($_POST["mensaje"]);
 	}
 
-	$destino='githalpteam@gmail.com';
+	$destino="githalpteam@gmail.com";
 	$contenido="Nombre: " . $nombre .  "\Asunto:" . $asunto."\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
 
 
 
 	if ($valido){
-		mail($destino, $asunto, $contenido);
-		echo <<<EOF
-		<script>alert("Mensaje enviado");</script>
+		try{
+			mail($destino, $asunto, $contenido);
+			echo <<<EOF
+			<script>alert("Mensaje enviado");</script>
 EOF;
+		}
+		catch(Exception $e){
+			echo <<<EOF
+			<script>alert("El envío ha fallado");</script>
+EOF;
+		}
 	}
 	else{
 		if (!empty($Enombre)){
