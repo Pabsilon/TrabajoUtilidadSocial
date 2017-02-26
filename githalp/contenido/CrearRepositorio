@@ -1,0 +1,15 @@
+¿Cómo crear un repositorio?
+Antes de empezar y crear un repositorio es interesante saber exactamente qué es. Un repositorio es un sitio centralizado donde se almacena y mantiene información digital, habitualmente bases de datos o archivos informáticos. Esto quiere decir que es donde subiremos los datos para poder compartirlos.
+Para crearlos hay dos posibilidades.
+La primera que consiste que desde tu página principal, en la sección de tus repositorios, pulses en “New repository”.
+[CrearRepositorio(1).jpg]
+Y la segunda que es pulsando en el mas que se encuentra al lado de tu perfil, que despliega un submenú con la posibilidad de crear un repositorio.
+[CrearRepositorio(1a).jpg]
+Una vez le demos a la opción de crearlos, iremos a la página de creación.
+[CrearRepositorio(2).jpg]
+Aquí hay que rellenar unos cuantos campos. 
+Empezamos poniendo el nombre del creador del repositorio y elegimos quien va a ser el propietario del repositorio.
+Después está la posibilidad de añadir una descripción sobre que vamos a crear, seguido de si queremos que el repositorio sea público o privado, y la licencia que le queremos aplicar.
+Finalmente nos permite crear un archivo README para dar información extra a aquellos que quieran colaborar con el proyecto.
+
+Y con esto ya está queda creado el repositorio en Github.
