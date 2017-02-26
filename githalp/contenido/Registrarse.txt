@@ -1,0 +1,12 @@
+¿Cómo registrarte en Github?
+Registrarte en Github es algo bastante sencillo, y hay varias maneras de hacerlo. La primera y más visual es la que encontramos en la página principal. Esta nos permite crear una cuenta directamente sin tener que buscar una opción para hacerlo.
+[Registrarse(1a).jpg]
+También hay otra posibilidad de hacerlo, que es pulsando el botón de sign in en el encabezado de la página web.
+[Registrarse(1).jpg]
+Si lo hacemos de esta manera nos mandará a otra página donde deberemos meter el nombre de usuario, un email y la contraseña.
+[Registrarse(2).jpg]
+Después de haber introducido los datos de la cuenta nos pedirá información sobre qué tipo de repositorios vamos a querer, siendo estos públicos (gratuitos) o privados (de pago). Con esto lo que se va a elegir es la posibilidad de permitir que otros usuarios vean tus repositorios o no. En caso de querer que estos sean privados habría que aceptar una mensualidad de 7 euros al mes.
+[Registrarte(3).jpg]
+Ya con esto hemos rellenado todos los datos básicos para crear una cuenta en Github. Sin embargo, existe la posibilidad de añadir información extra a tu perfil, existiendo las siguientes posibilidades.
+[Registrarse(4).jpg]
+En este momento nuestra cuenta ya está creada al 100% y lista para entrar en el mundo de Github.
