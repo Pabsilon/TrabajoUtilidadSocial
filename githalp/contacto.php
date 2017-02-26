@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<link rel="icon" type="image/png" href="logo.png" />
@@ -49,23 +49,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$mensaje = test_input($_POST["mensaje"]);
 	}
 
-	$destino="githalpteam@gmail.com";
+	$destino='githalpteam@gmail.com';
 	$contenido="Nombre: " . $nombre .  "\Asunto:" . $asunto."\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
 
 
 
 	if ($valido){
-		try{
-			mail($destino, $asunto, $contenido);
-			echo <<<EOF
-			<script>alert("Mensaje enviado");</script>
+		$headers =  'MIME-Version: 1.0' . "\r\n"; 
+		$headers .= 'From: Test <ghalpsend@gmail.com>' . "\r\n";
+		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+		mail($destino, $asunto, $contenido,$headers);
+		echo <<<EOF
+		<script>alert("Mensaje enviado");</script>
 EOF;
-		}
-		catch(Exception $e){
-			echo <<<EOF
-			<script>alert("El envío ha fallado");</script>
-EOF;
-		}
 	}
 	else{
 		if (!empty($Enombre)){
