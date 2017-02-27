@@ -4,7 +4,7 @@ body{
 	background-color: #EFEFEF;
 	font-family: 'Comfortaa', cursive;
 	font-size: 15px;
-	width: 850px;
+	max-width: 850px;
 	margin: auto;
 }
 
