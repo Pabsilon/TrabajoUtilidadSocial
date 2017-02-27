@@ -10,9 +10,9 @@
 		<div class="navElem dropdown">
 			<img src="teoria.png" class="navIcon"/>Teoría
 			<div class="dropdown-content">
+				<a href="guiaweb.php">Guía básica de la web</a>
+				<a href="guiaapp.php">App de escritorio</a>
 			    <a href="guiaconsola.php">Interfaz de consola</a>
-			    <a href="guiaapp.php">App de escritorio</a>
-			    <a href="guiaweb.php">Guía básica de la web</a>
 			</div>
 		</div>
 

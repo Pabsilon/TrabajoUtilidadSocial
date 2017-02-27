@@ -156,8 +156,8 @@ input[type=submit]:hover {
 
 .back-to-top {
     position: fixed;
-    bottom: 2em;
-    right: 5em;
+    bottom: 3em;
+    right: 3em;
     text-decoration: none;
     color: #000000;
     background-color: #C0C0C0;
