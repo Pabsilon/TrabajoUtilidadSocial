@@ -50,13 +50,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 
 	$destino="githalpteam@gmail.com";
-	$contenido="Nombre: " . $nombre .  "\Asunto:" . $asunto."\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
+	$contenido="Nombre: " . $nombre . "\nCorreo: " . $correo . "\n\nMensaje: " . $mensaje;
 
 
 
 	if ($valido){
 		try{
 			mail($destino, $asunto, $contenido);
+			//copia del envío
+			$cabecera = "De: $destino\n" . "Cc: $correo\n\n";
+			$asunto = "Copia de: " . $asunto;
+			mail($correo, $asunto, $contenido, $cabecera);
 			echo <<<EOF
 			<script>alert("Mensaje enviado");</script>
 EOF;
@@ -108,7 +112,7 @@ function test_input($data) {
 
 	<div id="contenedor">
 		<h1>Contáctanos</h1>
-		<p>Si ves que hay algo en la web que no te termina de encajar o simplemente quieres saludarnos, no dudes en mandarnos un correo con el formulario que hay a continuacion. Un saludo de parte del equipo de GitHalp.</p>
+		<p>Si ves que hay algo en la web que no te termina de encajar o simplemente quieres saludarnos, no dudes en mandarnos un correo con el formulario que hay a continuación. Un saludo de parte del equipo de GitHalp.</p>
 
 		<div id="formulario">
 			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -123,7 +127,6 @@ function test_input($data) {
 
 				<div id="boton"><input type="submit" value="Enviar"/></div>
 			</form>
-
 		</div>
 	</div>
 
